@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Resort Design System - Tropical Luxury */
+
+@layer base {
+  :root {
+    --background: 40 30% 98%;
+    --foreground: 210 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 25% 15%;
+
+    --primary: 195 85% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 45% 90%;
+    --secondary-foreground: 210 25% 15%;
+
+    --muted: 40 20% 94%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 28 75% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 195 85% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom Resort Colors */
+    --ocean: 195 85% 45%;
+    --ocean-deep: 200 90% 25%;
+    --sand: 40 35% 92%;
+    --sand-dark: 35 30% 75%;
+    --sunset: 28 85% 58%;
+    --tropical: 160 50% 40%;
+    --pearl: 40 30% 97%;
+
+    /* Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(195 85% 45%), hsl(200 90% 25%));
+    --gradient-sunset: linear-gradient(135deg, hsl(28 85% 58%), hsl(15 75% 50%));
+    --gradient-hero-overlay: linear-gradient(180deg, hsla(210 25% 10% / 0.3) 0%, hsla(210 25% 10% / 0.5) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.9) 0%, hsla(0 0% 100% / 0.7) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsla(210 25% 15% / 0.1);
+    --shadow-card: 0 8px 32px -8px hsla(210 25% 15% / 0.15);
+    --shadow-elevated: 0 16px 48px -12px hsla(210 25% 15% / 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 25% 8%;
+    --foreground: 40 30% 95%;
+
+    --card: 210 25% 12%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 210 25% 12%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 195 75% 50%;
+    --primary-foreground: 210 25% 8%;
+
+    --secondary: 210 20% 20%;
+    --secondary-foreground: 40 30% 95%;
+
+    --muted: 210 20% 18%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 28 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 195 75% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsla(0 0% 100% / 0.3);
+  }
+
+  .text-gradient-ocean {
+    background: var(--gradient-ocean);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-overlay {
+    background: var(--gradient-hero-overlay);
+  }
+}
