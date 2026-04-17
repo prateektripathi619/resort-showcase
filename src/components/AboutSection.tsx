@@ -11,11 +11,11 @@ const destinations = [
   {
     days: "Days 4-5",
     title: "Near by WaterFall",
-    image: waterfall, 
+    image: waterfall,
   },
   {
     days: "Days 6-7",
-    title: "Born Fire",
+    title: "Bonfire ",
     image: bornfire,
   },
 ];
