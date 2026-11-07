@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Youtube } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -61,6 +61,15 @@ export const Footer = () => {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="https://www.youtube.com/watch?v=9nn3aPiE_j0&list=RD9nn3aPiE_j0&start_radio=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-card/70 hover:text-card transition-colors text-sm py-1"
+              >
+                <Youtube className="w-4 h-4 text-sunset" />
+                YouTube
+              </a>
             </div>
           </div>
 
