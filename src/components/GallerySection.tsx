@@ -1,20 +1,17 @@
 import LandingPage from "@/assets/LandingPage.png";
 import TopView from "@/assets/TopView.png";
-import marriage from "@/assets/marriage .png"
-import bedroom from "@/assets/rooms.png"
-import pool from "@/assets/pool.png"
-import G1 from "@/assets/G1.png"
-import G2 from "@/assets/G2.png"
+import hall from "@/assets/hall.jpg";
+import bedroom from "@/assets/rooms.png";
+import G1 from "@/assets/G1.png";
+import G2 from "@/assets/G2.png";
 
 const images = [
   { src: LandingPage, alt: "Luxury Resort" },
-  { src: TopView , label: "Lake View" },
-  
-  { src: bedroom, label: "Luxury Rooms" },
-  
-  { src: G1, label: "G1" },
-  { src: G2, label: "G2" },
-  
+  { src: TopView, alt: "Lake View" },
+  { src: bedroom, alt: "Luxury Rooms" },
+  { src: hall, alt: "Wedding hall and event venue" },
+  { src: G1, alt: "Resort grounds" },
+  { src: G2, alt: "Resort scenery" },
 ];
 
 export const GallerySection = () => {
