@@ -5,7 +5,6 @@ import bedroom from "@/assets/rooms.png"
 import pool from "@/assets/pool.png"
 import G1 from "@/assets/G1.png"
 import G2 from "@/assets/G2.png"
-import G3 from "@/assets/G3.jpeg"
 
 const images = [
   { src: LandingPage, alt: "Luxury Resort" },
@@ -15,7 +14,6 @@ const images = [
   
   { src: G1, label: "G1" },
   { src: G2, label: "G2" },
-  { src: G3, label: "G3" },
   
 ];
 
